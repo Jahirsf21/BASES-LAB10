@@ -5,7 +5,8 @@ CREATE TABLE Producto(
     IdProducto INT PRIMARY KEY,
     Nombre VARCHAR(100),
     Precio DECIMAL(10,2),
-    Stock INT
+    Stock INT,
+    Estado BIT NOT NULL DEFAULT 0
 );
 
 CREATE TABLE AuditoriaPrecio(
